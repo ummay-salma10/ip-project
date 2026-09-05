@@ -1,0 +1,61 @@
+// Variables declaration
+$primary-color: #FF00FF;
+$white: #ffffff;
+$dark-text: #222222;
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+// Nesting 
+.card {
+  background-color: $primary-color;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 300px;
+
+  h2 {
+    color: $white;
+    margin-top: 0;
+  }
+
+  p {
+    color: #e0f2f1;
+    font-size: 14px;
+  }
+  .button-group{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  button {
+    background-color: $white;
+    color: $primary-color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    &.btn-No{
+        background-color: transparent;
+        border: 1px solid $white;
+        color: $white;
+    }
+
+    // Hover effect
+    &:hover {
+      background-color: #e0e0e0;
+      color: darken($primary-color, 10%);
+    }
+  }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salma — Personal Profile</title>
+<style>
+  :root{
+    --ink:#1c1b19; --paper:#f7f4ee; --accent:#3a5a40; --accent2:#a44a3f;
+    --line:#d8d2c4;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; 
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Georgia','Times New Roman',serif; 
+    line-height:1.6;
+  }
+  header{
+    padding:56px 24px 40px;
+    text-align:center;
+    border-bottom:2px solid var(--line);
+  }
+  header h1{
+    margin:0;
+    font-size:2.4rem; 
+    letter-spacing:0.5px;
+  }
+  header p{ 
+    color:#6b6558; 
+    margin-top:8px; 
+    font-size:1.05rem; }
+  nav{
+    display:flex; 
+    justify-content:center; 
+    gap:28px;
+    padding:14px; 
+    background:var(--ink);
+  }
+  nav a{
+     color:var(--paper); 
+     text-decoration:none; 
+     font-family:Arial, sans-serif;
+      font-size:0.9rem; }
+  nav a:hover{ 
+    color:#e6ddc6; 
+}
+  main{
+    max-width:760px;
+    margin:0 auto;
+    padding:40px 24px;
+     }
+  section{ 
+    margin-bottom:44px;
+ }
+  section h2{
+    font-size:1.3rem;
+    border-left:4px solid var(--accent);
+    padding-left:12px;
+    margin-bottom:18px;
+  }
+  article{
+    background:#fff; 
+    border:1px solid var(--line); 
+    border-radius:6px;
+    padding:20px 22px;
+    margin-bottom:14px;
+  }
+  article h3{
+    margin:0 0 6px; 
+    font-size:1.05rem; 
+    color:var(--accent2);
+     }
+  ul{
+     padding-left:20px; 
+    }
+  aside{
+    background:#eee8d8; 
+    border-left:4px solid var(--accent2);
+    padding:16px 20px;
+    font-family:Arial, sans-serif; 
+    font-size:0.92rem;
+  }
+  footer{
+    text-align:center; 
+    padding:26px; color:#8a8474;
+    font-family:Arial, sans-serif;
+    font-size:0.85rem;
+    border-top:1px solid var(--line);
+    margin-top:20px;
+  }
+</style>
+</head>
+<body>
+
+<!-- header: site/page identity -->
+<header>
+  <h1>Salma</h1>
+  <p>Student, CSE · Premier University Chittagong</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#art">Art</a>
+</nav>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Computer Science and Engineering (CSE) student studying at Premier University Chittagong.
+       Alongside my engineering studies, I work with portrait art and accept custom portrait commissions.
+    </p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <article>
+      <h3>B.Sc. in Computer Science & Engineering</h3>
+      <p>Premier University Chittagong — Currently Studying</p>
+      <p>Core courses: OOP,NM,IP,CGVA.</p>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming Language: C, C++, Java</li>
+      <li>Core Concepts: Object-Orienyed Programming(OOP),Data Structure(DS)</li>
+      <li>Web Basics: HTML5, CSS3, JS</li>
+      <li>Art & Design: portrait Drawing & Custom commissions</li>
+    </ul>
+  </section>
+
+  <section id="art">
+    <h2>Artistic Practice</h2>
+    <p>
+      I create custom portrait commissions. Pursuing creative arts alongside engineering is a core passion of mine!
+    </p>
+    <aside>
+      Note: This aside tag is used to display related side content- a great example of sementic HTML5!
+    </aside>
+  </section>
+</main>
+
+<footer>
+  &copy; 2026 Salma — Personal Profile Page (Lab Exercise 1, Module 2)
+</footer>
+
+</body>
+</html>

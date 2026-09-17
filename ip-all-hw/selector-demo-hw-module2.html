@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Demonstration</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      padding: 30px;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    
+    #main-card {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    
+    .highlight {
+      background-color: #e3f2fd;
+      color: #0d47a1;
+      padding: 8px;
+      border-radius: 4px;
+    }
+
+    
+    #main-card p {
+      line-height: 1.6;
+    }
+
+    
+    ul.course-container > li {
+      color: #2e7d32;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ID Selector Test -->
+  <div id="main-card">
+    <h2>CSS Selectors Demo</h2>
+
+    <!-- Class & Descendant Selector Test -->
+    <p class="highlight">This paragraph is styled using a Class Selector.</p>
+    
+    <p>This paragraph inside main-card uses a Descendant Selector.</p>
+
+    <h3>Enrolled Courses:</h3>
+    <!-- Child Selector Test -->
+    <ul class="course-container">
+      <li>Data Structures & Algorithms</li>
+      <li>Object Oriented Programming</li>
+      <li>Web Development</li>
+    </ul>
+  </div>
+
+</body>
+</html>

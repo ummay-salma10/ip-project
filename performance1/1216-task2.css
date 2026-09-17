@@ -1,0 +1,185 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    background-color: #111;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 15px 40px;
+}
+
+.logo {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+nav h2 {
+    margin-right: auto;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+
+    margin-left: 20px;
+}
+
+
+/* Hero Section */
+
+.hero {
+    height: 350px;
+
+    background-color: #333;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+
+    padding: 12px 20px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+
+/* Player Section */
+
+#players {
+    padding: 40px;
+}
+
+#players>h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* Player Grid */
+
+.player-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Player Card */
+
+.card {
+    background-color: white;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 7px;
+}
+
+
+/* About */
+
+.about {
+    background-color: #ddd;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+    .player-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .player-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav h2 {
+        margin: 10px;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+}

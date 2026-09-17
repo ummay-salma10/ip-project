@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Kylian Mbappe",
+        "position": "Forward",
+        "number": 9,
+        "country": "France"
+    },
+    {
+        "name": "Vinicius Junior",
+        "position": "Forward",
+        "number": 7,
+        "country": "Brazil"
+    },
+    {
+        "name": "Jude Bellingham",
+        "position": "Midfielder",
+        "number": 5,
+        "country": "England"
+    },
+    {
+        "name": "Federico Valverde",
+        "position": "Midfielder",
+        "number": 8,
+        "country": "Uruguay"
+    },
+    {
+        "name": "Rodrygo",
+        "position": "Forward",
+        "number": 11,
+        "country": "Brazil"
+    },
+    {
+        "name": "Thibaut Courtois",
+        "position": "Goalkeeper",
+        "number": 1,
+        "country": "Belgium"
+    },
+    {
+        "name": "Antonio Rudiger",
+        "position": "Defender",
+        "number": 22,
+        "country": "Germany"
+    },
+    {
+        "name": "Dani Carvajal",
+        "position": "Defender",
+        "number": 2,
+        "country": "Spain"
+    }
+]

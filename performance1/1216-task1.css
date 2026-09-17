@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Navbar */
+nav {
+    background-color: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+nav h2 {
+    margin-right: auto;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Hero */
+.hero {
+    height: 350px;
+    background-color: #333;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Players */
+#players {
+    padding: 40px;
+}
+
+#players h2,
+#about h2 {
+    text-align: center;
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+}
+
+/* About */
+#about {
+    padding: 40px;
+    background-color: #ddd;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .player-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .player-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav h2 {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}

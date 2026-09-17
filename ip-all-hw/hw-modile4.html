@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Profile Cards</title>
+  <style>
+    /* Global Styles & Box Model Setup */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    /* Requirement 4: CSS Grid for multiple cards layout */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Requirement 1: Box Model (padding, margin, border) */
+    .card {
+      position: relative; /* Required for absolute positioned badge */
+      background: #ffe4e1;
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      
+      /* Requirement 3: Flexbox for card content alignment */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Requirement 2: Position "ONLINE" badge using position: absolute */
+    .badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: #2e7d32;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 12px;
+      text-transform: uppercase;
+    }
+
+    .card img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #007bff;
+    }
+
+    .card h3 {
+      color: #222;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .card p.role {
+      color: #007bff;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .card p.bio {
+      color: #666;
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .card button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .card button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Requirement 5: Media Query to stack cards on smaller screens */
+    @media (max-width: 768px) {
+      .card-container {
+        grid-template-columns: 1fr; /* Stack in single column */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Student Profiles</h1>
+
+  <div class="card-container">
+    
+    <!-- Profile Card 1 -->
+    <div class="card">
+      <span class="badge">ONLINE</span>
+      <img src="https://tse4.mm.bing.net/th/id/OIP.kyVWxBSI-J6VBtABMYOXpwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Profile Picture">
+      <h3>Ummay Salma</h3>
+      <p class="role">Web Developer,Artist</p>
+      <p class="bio">Focused on C++, Web Development, and UI Design,passionate about painting.</p>
+      <button>Connect</button>
+    </div>
+
+    <!-- Profile Card 2 -->
+    <div class="card">
+      <span class="badge">ONLINE</span>
+      <img src="https://clipart-library.com/images/riLoj96oT.jpg" alt="Profile Picture">
+      <h3>Anjila Junnat</h3>
+      <p class="role">Software Engineering Student</p>
+      <p class="bio">Passionate about web platforms and algorithm design.</p>
+      <button>Connect</button>
+    </div>
+
+    <!-- Profile Card 3 -->
+    <div class="card">
+      <span class="badge">NEW</span>
+      <img src="https://tse4.mm.bing.net/th/id/OIP.lYP5TETUV0sFU5WWkEaFFgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Profile Picture">
+      <h3>Tunas</h3>
+      <p class="role">Web Developer</p>
+      <p class="bio">Exploring CSS Grid, Flexbox, and modern frontend tools.</p>
+      <button>Connect</button>
+    </div>
+    <!-- Profile Card 4 -->
+    <div class="card">
+      <span class="badge">NEW</span>
+      <img src="https://i.pinimg.com/originals/87/cc/5a/87cc5a50abb13796375f3d50f34f917b.jpg" alt="Profile Picture">
+      <h3>Rabeya</h3>
+      <p class="role">Graphic Designer</p>
+      <p class="bio">passionate graphic designer,banner design,and creative visual artwork.</p>
+      <button>Connect</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
